@@ -1,0 +1,140 @@
+{
+  /*
+  Overwrites
+  */
+  "editor.wordWrap": "on",
+  "jshint.lintHTML": true,
+  "jshint.options": {
+      "esversion": 8
+  },
+  "workbench.iconTheme"              : "material-icon-theme",
+  "workbench.colorTheme"             : "dark-plus-syntax",
+  "editor.fontFamily"                : "Fira Code",
+  "editor.fontSize"                  : 18,
+  "window.zoomLevel"                 : -0.5,      //reduzco el tamaño de la interfaz
+  "editor.renderWhitespace"          : "all",
+  "editor.fontLigatures"             : true,
+  "editor.cursorBlinking"            : "phase", // es un parpadeo del cursor mucho más suave.
+  "editor.minimap.renderCharacters"  : false,
+  "editor.minimap.maxColumn"         : 150,
+  "editor.minimap.showSlider"        : "always",// para mostrar siempre la posición en el documento
+  "editor.smoothScrolling"           : true,
+  "editor.cursorSmoothCaretAnimation": true,    // mejora la suavidad del cursor al desplazarse
+
+  //para que la fuente operator mono muestre el
+  //estilo cursiva cuando corresponde
+  "editor.tokenColorCustomizations": {
+    "Panda Syntax": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "punctuation.definition.comment",
+            "comment.block",
+            "comment.line",
+            "comment.block.documentation",
+            "comment.line.double-slash",
+            "entity.other.attribute-name",
+            "entity.other.attribute-name.html",
+            "markup.italic",
+            "entity.other.attribute-name.id",
+            "entity.other.attribute-name.class.css",
+            "entity.other.attribute-name.tag.jade",
+            "entity.other.attribute-name.class.jade",
+            "entity.other.attribute-name.id.jade",
+            "keyword.control",
+            "storage",
+            "emphasis",
+            "variable.language"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    }
+  },
+
+  "git.confirmSync"             : false,
+  "breadcrumbs.enabled"         : false,
+  "files.autoSave"              : "off",
+  "files.trimTrailingWhitespace": true,
+
+  /*********************************************************************************/
+
+  /*
+  Extensiones
+  */
+  //en la futura actualización 1903 intentaré hacer funcionar bash como terminal
+  //ahora me da problemas de permisos
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+  "togglequotes.chars": [
+    "\"",
+    "'",
+    "`"
+  ],
+
+  "printcode.fontSize": 8,
+
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave"   : true,
+
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords"       : [
+    {
+      "text"           : "REVIEW:",
+      "color"          : "#0e4958",
+      "borderRadius"   : "4px",
+      "backgroundColor": "#d3f4fb",
+    },
+    {
+      "text"           : "IMPORTANT:",
+      "color"          : "#e25454",
+      "borderRadius"   : "4px",
+      "backgroundColor": "#fdfdd4",
+    },
+    {
+      "text"           : "TODO:",
+      "color"          : "white",
+      "borderRadius"   : "4px",
+      "backgroundColor": "#255c25",
+    }
+  ],
+
+  "colorHelper.disableGpu": 1,  //si no deshabilito esto no me funciona
+
+  "polacode.backgroundColor": "#ffffff",
+
+  "alignment.surroundSpace" : {
+    "colon": [0, 1],  // The first number specify how much space to add to the left, can be negative.
+                           // The second number is how much space to the right, can be negative.
+    "assignment": [1, 1],  // The same as above.
+    "arrow"     : [1, 1],  // The same as above.
+    "comment"   : 1        // Special how much space to add between the trailing comment and the code.
+                           // If this value is negative, it means don't align the trailing comment.
+  },
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 17,
+  "editor.suggestSelection": "first",
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "html"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "htmltagwrap.tag": "div",
+  /* "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", */
+  "vsintellicode.modify.editor.suggestSelection": "enabled",
+  "editor.fontWeight": "100",
+  "debug.console.fontSize": 16,
+  "terminal.integrated.fontFamily": "Fira Code Light",
+  "terminal.integrated.fontWeight": "100"
+}

@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-title>Mapa</mat-card-title>
+  <mat-card-subtitle>Google Maps</mat-card-subtitle>
+  <mat-card-content>
+    <agm-map (mapClick)="agregarMarcador($event)" [latitude]="lat" [longitude]="lng" [zoom]="15">
+      <agm-marker *ngFor="let loc of marcadores; let i=index" [latitude]="loc.lat" [longitude]="loc.lng">
+        <agm-info-window>
+          <strong>{{loc.titulo}}</strong>
+          <p>
+            {{loc.desc}}
+          </p>
+          <button (click)="editarMarcador(loc)" mat-raised-button color="primary">Editar</button>
+          <button (click)="borrarLoc(i)" mat-raised-button color="warn">Borrar</button>
+        </agm-info-window>
+      </agm-marker>
+    </agm-map>
+  </mat-card-content>
+</mat-card>
+
